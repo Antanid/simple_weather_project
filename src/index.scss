@@ -61,11 +61,41 @@ code {
           transition: all 0.3s;
         }
       }
+
+      @media (max-width: 420px) {
+        button {
+          margin-top: 20px;
+        }
+      }
     }
-.infoPanel{
-  text-align: center;
-}
- 
+
+    .infoPanel {
+      text-align: center;
+
+      .weatherStatus {
+        align-items: center;
+        display: inline-flex;
+      }
+
+      .buttonFtoC {
+        font-size: 15px;
+        width: 200PX;
+        height: 30px;
+        border-radius: 40px;
+        color: #ffffff;
+        border: none;
+        background-color: #ffcc80;
+        cursor: pointer;
+
+        &:hover {
+          border: 1px solid #ffcc80;
+          color: #ffcc80;
+          background-color: #ffffff;
+          transition: all 0.3s;
+        }
+      }
+    }
+
   }
 
 }

@@ -1,6 +1,10 @@
 import React from "react";
 
-const TextMain = ({text}) => {
+type TextProps = {
+  text : string
+}
+
+const TextMain: React.FC <TextProps> = ({text}) => {
   return (
     <div className="main_text">
       <h1>{text}</h1>
